@@ -1,6 +1,10 @@
 # svg-text-slider
 Dynamic SVG Text Showcase
 
+LIFE VIEW:
+
+https://codepen.io/inverser/pen/azOPELK
+
 
 SVG Text Slider
 
