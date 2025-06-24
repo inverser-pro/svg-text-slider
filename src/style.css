@@ -1,0 +1,97 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  background-color: #000;
+  font-family: 'Roboto Condensed';
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.mh1{min-height: 100svh}
+
+.db{display: block}
+.dn{display: none}
+.in{display: inline-block}
+
+.fx{display: flex}
+.fw{flex-wrap: wrap}
+.fdc{flex-direction: column}
+.fpc{place-items: center}
+.ac{align-items: center}
+.abl{align-items: baseline}
+.asc{align-self: center}
+.ais{align-items: start}
+.jc{justify-content: center}
+.fsb{justify-content: space-between}
+.fsa{justify-content: space-around}
+.fse{justify-content: space-evenly}
+.fje{justify-content: end}
+
+.pr{position: relative}
+.pf{position: fixed}
+.p0{inset: 0}
+.z1{z-index: 1}
+.z2{z-index: 2}
+.z3{z-index: 3}
+
+.gap\.6{gap:.6rem}
+.gap{gap:1rem}
+.ovh{overflow: hidden}
+
+.cf,button,body{color: #fff}
+
+#canvasContainer,#neuro{
+  position: fixed;
+  inset: 0;
+  z-index: 2;
+  max-width: 100svw;
+  max-height: 100svh;
+}
+#neuro{z-index: 1}
+canvas {
+  image-rendering: auto; /* или smooth */
+}
+
+
+button{
+  all:unset;
+  padding: .4rem 1rem;
+  background-color: #000;
+  border-radius: 1rem;
+  font-family: inherit;
+  user-select: none;
+}
+
+.slider-next{
+  left:50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  transition: transform linear .1s;
+  &:active{
+    transform: translateX(-50%)scale(.97);
+  }
+  img{
+    animation: a0 linear .6s .7s 3;
+  }
+}
+@keyframes a0 {50%{transform:translateX(10%)}}
